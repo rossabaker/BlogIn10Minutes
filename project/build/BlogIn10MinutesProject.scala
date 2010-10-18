@@ -14,6 +14,7 @@ class BlogIn10MinutesProject(info: ProjectInfo) extends DefaultWebProject(info) 
     "org.eclipse.jetty" % "jetty-webapp" % "7.0.2.RC0" % "test",
     "org.fusesource.scalate" % "scalate-core" % "1.2",
     "org.mortbay.jetty" % "servlet-api" % "2.5-20081211" % "provided",
-    "net.liftweb" % "lift-json" % "2.0-scala280-SNAPSHOT"
+    "net.liftweb" % "lift-json" % "2.0-scala280-SNAPSHOT",
+    "org.scalaquery" %% "scalaquery" % "0.9.0"
   )
 }
