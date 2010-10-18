@@ -15,6 +15,7 @@ class BlogIn10MinutesProject(info: ProjectInfo) extends DefaultWebProject(info) 
     "org.fusesource.scalate" % "scalate-core" % "1.2",
     "org.mortbay.jetty" % "servlet-api" % "2.5-20081211" % "provided",
     "net.liftweb" % "lift-json" % "2.0-scala280-SNAPSHOT",
-    "org.scalaquery" %% "scalaquery" % "0.9.0"
+    "org.scalaquery" %% "scalaquery" % "0.9.0",
+    "postgresql" % "postgresql" % "8.4-702.jdbc4"
   )
 }
