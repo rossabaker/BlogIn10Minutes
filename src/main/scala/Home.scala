@@ -5,7 +5,7 @@ import org.scalatra.scalate.ScalateSupport
 import net.liftweb.json.{JsonParser, Serialization}
 
 class Home extends ScalatraFilter with ScalateSupport {
-  val dao = new BlogDAO
+  val dao = MemoryBlogDao
 
   before {
     contentType = "text/html"

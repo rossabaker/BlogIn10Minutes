@@ -1,6 +1,12 @@
 package com.meetup.scala
 
-class BlogDAO {
+trait BlogDAO {
+  def getBlog: Blog
+
+  def postComment(id: Int, comment: Comment): Unit
+}
+
+object MemoryBlogDao extends BlogDAO {
   val comment1 = Comment("My comment", "jboyens")
   val comment2 = Comment("My anon comment")
 
